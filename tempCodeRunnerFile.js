@@ -1,0 +1,1 @@
+newBill.newName('Hoang');
