@@ -11,8 +11,8 @@ var param2 = 10;
 
 function myFunction(param1, param2) {
     /**
-     * @param1 
-     * @param2
+     * @param1 first parameter
+     * @param2 second parameter
      * behave as local variables (not change when outside the function)
      */
     //code to be executed 
@@ -27,7 +27,7 @@ function myFunction(param1, param2) {
 
 
 /**
- * Function return.
+ * Function returns.
  * When funtion reach 'return' statement, it'll stop
  * and often return a product or just return
  */
@@ -39,7 +39,8 @@ function multiply(param1, param2) {
 }
 //OR
 const mult = function (param1, param2) { //Anonymous function
-    return param1 * param2;
+    param1 *= param2;
+    return param1;
 }
 
 var result = multiply(param1, param2);

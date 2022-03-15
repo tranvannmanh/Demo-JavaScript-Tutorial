@@ -34,7 +34,6 @@ console.log(car);
 
 /**
  * shift() remove first element from array and shift all element to lower index
- * 
  */
 car.shift();
 console.log(car);

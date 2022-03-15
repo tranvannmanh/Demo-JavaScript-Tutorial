@@ -5,7 +5,7 @@
 const arr = ['some', 'dfsd', 'guwi', 'dfjksdhfkadkkg'];
 const person = { name: "manh", age: "21", phone: "0336029751" };
 
-for (element in arr) {
+for (index in arr) {
     //element return index of each element in arr
     console.log(arr[element]);
 }

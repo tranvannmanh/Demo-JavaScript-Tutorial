@@ -71,11 +71,15 @@ console.log(score);
 /**
  * NULL vs UNDEFINED
  */
-
 let vars;
 console.log(vars);//undefined
-console.log(typeof (vars)); //undefided
+console.log(typeof (vars)); //undefined
 
 vars = null; // must assign null to variable
 console.log(vars); // null 
 console.log(typeof (vars));//object
+
+const sayhi = function (person) {
+    console.log('Hello, ' + person);
+}
+console.log(typeof sayhi);

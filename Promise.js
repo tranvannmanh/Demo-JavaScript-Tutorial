@@ -8,7 +8,7 @@ let promise = new Promise(
     function (resolve, reject) {
        //success: resolve() if logic is ok
        //error: reject() 
-       let result = calculate(2, '2') //lower than summation() ???
+        let result = calculate(2, '2') //lower than summation() ???
 
         if(result)
             resolve(result)
@@ -27,7 +27,7 @@ promise
         console.log(error); // if reject
     })
     .finally(() => {
-        console.log('Done1!');
+        console.log('Done1!'); // Always executed
     })
 
 
@@ -40,20 +40,19 @@ async function summation(param1, param2) {
     return param1 + param2;
 }
 
-summation(1,2)
-    .then(result => {
-        console.log(result);
-    })
-    .catch(() => {
-        console.log('error2')
-    })
-    .finally(() => console.log('Done2!'));
+// summation(1,2)
+//     .then(result => {
+//         console.log(result);
+//     })
+//     .catch(() => {
+//         console.log('error2')
+//     })
+//     .finally(() => console.log('Done2!'));
 
 
 
 const displayResult = async () => {
-    let result = 0;
-    result = await summation(1, 5);
+    const result = await summation(1, 5);
     console.log(result);
 }
 
