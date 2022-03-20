@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/be4a2f4910.js" crossorigin="anonymous"></script>
+    <title>Demo Todolist</title>
+    <style>
+        body {
+            background-color: azure;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Fredoka', sans-serif;
+            color: black;
+        }
+        .container {
+            position: absolute;
+            width: 40%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        ::placeholder {
+            color: rgb(151, 151, 151);
+        }
+        #add_task {
+            display: flex;
+            height: 30px;
+        }
+        #input_task{
+            background-color: #214875;
+            box-sizing: border-box;
+            width: 90%;
+            color: white;
+            padding: 0 10px;
+            outline: none;
+            border: 1px solid transparent;
+        }
+        
+        #add_btn {
+            display: flex;
+            align-items: center;
+            width: 10%;
+            justify-content: center;
+            background-color: rgb(157, 240, 222);
+            border: 1px solid transparent;
+            font-size: 2vw;
+        }
+
+        #list {
+            list-style-type: none;
+            /* width: 100%; */
+        }
+
+        #list li {
+            border-bottom: 1px solid rgb(228, 228, 228);
+            box-sizing: border-box;
+            padding: 9px 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            font-weight: 400;
+            background-color: white;
+        }
+
+        #list li input {
+            margin-right: 10px;
+        }
+
+        .actions_item{
+            width: 10%;
+        }
+
+        .remove_item {
+            height: 100%;
+            background-color: transparent;
+            border: 1px solid transparent;
+            background-color: rgb(255, 115, 115);
+            width: 50%;
+            right: 0;
+        }
+
+        .edit_item {
+            border: 1px solid transparent;
+            width: 50%;
+            background-color: rgb(102, 226, 210);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="add_task">
+            <input type="text" name="content_task" id="input_task" placeholder="Enter a task" >
+            <button id="add_btn"onclick="return add_new()"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div>
+            <ul id="list">
+    
+            </ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
