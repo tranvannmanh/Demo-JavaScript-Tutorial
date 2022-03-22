@@ -7,5 +7,8 @@
  * 2. attribute: các thuộc tính định nghĩa element -> href, src,...
  * 3. text
  * 
- * HTML DOM 
- */
+ * Vitual DOM 
+ * là khái niệm lập trình giao diện người dùng ảo được lưu trong bộ nhớ và được đồng bộ với DOM thực bởi thư viện như ReactDOM.
+ * được sử dụng trong Reactjs với mục đích định nghĩa các component, tránh việc lặp... chỉ cập nhật những node cần thiết.
+ * 
+*/
