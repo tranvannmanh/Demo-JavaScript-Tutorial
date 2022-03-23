@@ -1,3 +1,4 @@
+import '../App.css';
 import React from 'React';
 
 /**
@@ -15,9 +16,9 @@ import React from 'React';
  * The component also requires a render() method, this method returns HTML.
  */
 class ClassComponent extends React.Component {
-  render() {
-    return <h1>Demo class component</h1>
-  }
+	render() {
+		return <h1>Demo class component</h1>
+	}
 }
 
 /**
@@ -28,15 +29,15 @@ class ClassComponent extends React.Component {
  * initiate component's properties(props)
  */
 class ConstructorDemo extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      content: 'Demo constructor',
-    }
-  };
-  render() {
-    return <h1>Demo constructor: {this.state.content}</h1>
-  }
+	constructor() {
+		super();
+		this.state = {
+			content: 'Demo constructor',
+		}
+	};
+	render() {
+		return <h1>Demo constructor: {this.state.content}</h1>
+	}
 }
 
 /**
@@ -47,14 +48,14 @@ class ConstructorDemo extends React.Component {
  * If your component has a constructor function, the props should always be passed to the constructor and also to the React.Component via the super() method.
  */
 class PropsDemo extends React.Component{
-  render() {
-    return <h1>{this.props.content}</h1>
-    /**
-     * now we have an attribute named 'content' in this component
-     * define this attribute when this component is called
-     * VD: <PropsDemo content='content'/>
-     */
-  }
+	render() {
+		return <h1>{this.props.content}</h1>
+		/**
+		 * now we have an attribute named 'content' in this component
+		 * define this attribute when this component is called
+		 * VD: <PropsDemo content='content'/>
+		 */
+	}
 }
 
 /**
@@ -64,7 +65,7 @@ class PropsDemo extends React.Component{
  */
 
 function FunctionComponent() {
-  return <h1>Demo funtion component</h1>
+	return <h1>Demo funtion component</h1>
 }
 
 
@@ -75,14 +76,16 @@ function FunctionComponent() {
  * */
 
 function DemoComponent(props){
-  return (
-    <div className="App">
-        <header className="App-header">
-          <h1>
-          {props.content}!!!
-        </h1>
-          <p>T R A N V A N M A N H</p>
-    </header>
+	return (
+		<div className="App">
+	      <header className="App-header">
+	        <h1>
+		      {props.content}!!!
+		    </h1>
+    	    <p>T R A N V A N M A N H</p>
+		</header>
     </div>
-  )
+	)
 }
+
+export default DemoComponent;
