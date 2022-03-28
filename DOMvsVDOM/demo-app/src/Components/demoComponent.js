@@ -75,6 +75,7 @@ function FunctionComponent() {
  * To send props into a component, use the same syntax as HTML attributes: 
  * */
 
+
 function DemoComponent(props){
 	return (
 		<div className="App">
