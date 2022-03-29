@@ -4,6 +4,8 @@ import Dog from './Animal';
 export default class Animal extends React.Component {
     constructor(props) {
         super(props);
+        
+        // define state object
         this.state = {
             type: 'dog',
             name: 'Joshep',
@@ -11,8 +13,10 @@ export default class Animal extends React.Component {
         }
     }
 
+    // function to change color
     changeColor = () => {
         this.setState({
+            // change state color to dark
             color: 'dark',
         })
     }
@@ -28,6 +32,9 @@ export default class Animal extends React.Component {
                     name={this.state.name}
                     color={this.state.color}
                 />
+                {/**
+                 * use state color
+                 */}
                 <p>Color: {this.state.color}</p>
                 <button
                     onClick={this.changeColor}
